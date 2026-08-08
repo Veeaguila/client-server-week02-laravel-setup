@@ -339,13 +339,13 @@ Overall, this activity helped me understand the basic tools and workflow require
 
 # Student Information
 
-**Student Name:** [YOUR NAME]
+**Student Name:** Jayvee C. Aguila
 
-**Student Number:** [YOUR STUDENT NUMBER]
+**Student Number:** 0124-0432
 
 **Course:** ITST 302 – Client-Server Technologies
 
-**Section:** [YOUR SECTION]
+**Section:** BSIT - 2C
 
 **Subject:** Client-Server Technologies
 
