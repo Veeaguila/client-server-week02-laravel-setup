@@ -1,170 +1,303 @@
-# Hello Laravel – Professional Laravel Development Environment
+# Hello Laravel – Client-Server Technologies
 
 ## 1. Project Title
 
-**Hello Laravel – Professional Laravel Development Environment**
+# Hello Laravel
+
+**Week 2 – Laravel Development Environment**
+
+**ITST 302 – Client-Server Technologies**
+
+---
 
 ## 2. Introduction
 
-Laravel is a PHP web application framework used to develop modern web applications. It provides developers with an organized structure and tools that make web application development easier and more efficient.
+### Brief Overview of Laravel
 
-The purpose of this project is to configure a Laravel development environment and create a basic Laravel application for the Week 2 laboratory activity in ITST 302 – Client-Server Technologies.
+Laravel is a PHP web application framework used to build modern web applications. It provides developers with tools for routing, database management, views, and other common web development tasks.
 
-This project demonstrates the installation and verification of PHP, Composer, Laravel, Git, MySQL, and Visual Studio Code. It also demonstrates how to create, run, customize, document, and manage a Laravel application using Git.
+### Importance of Client-Server Technologies
 
-## 3. Objectives
+Client-Server Technologies are important because they explain how clients communicate with servers to request and receive information. Web applications use this architecture to allow users to interact with applications while servers process requests and communicate with databases.
 
-The objectives of this activity are:
+### Purpose of the Project
 
-1. Install and verify PHP.
-2. Install and verify Composer.
-3. Install and verify Laravel.
-4. Install and verify Git.
-5. Install and verify MySQL.
-6. Configure Visual Studio Code for Laravel development.
-7. Create and run a Laravel application locally.
-8. Customize the Laravel homepage.
-9. Document the development process.
-10. Practice Git version control.
-11. Upload the project to GitHub.
+The purpose of this project is to set up a complete Laravel development environment and create a basic Laravel application.
 
-## 4. Development Environment
+This activity demonstrates the installation and verification of PHP, Composer, Laravel, Git, MySQL, and Visual Studio Code. It also demonstrates how to create a Laravel project, run it locally, modify the homepage, and push the completed project to GitHub.
 
-The following software and tools were used:
+---
 
-| Software           | Purpose                          |
-| ------------------ | -------------------------------- |
-| Windows 11         | Operating System                 |
-| PHP                | Server-side programming language |
-| Composer           | PHP dependency manager           |
-| Laravel            | PHP web application framework    |
-| Git                | Version control                  |
-| MySQL              | Database management system       |
-| Visual Studio Code | Code editor                      |
+# 3. Install PHP
 
-### Verification Commands
+PHP is required because Laravel is a PHP-based web application framework.
 
-PHP:
+After installing PHP, the installation was verified through Git Bash using the following command:
 
 ```bash
 php -v
 ```
 
-Composer:
+The command displays the PHP version installed on the computer.
+
+### PHP Installation Verification
+
+![PHP Version Verification](screenshots/php-version.png)
+
+**What the screenshot shows:**
+
+The screenshot shows the PHP version information displayed in Git Bash after executing `php -v`. This confirms that PHP is installed correctly and that the PHP command can be accessed through the terminal.
+
+---
+
+# 4. Install Composer
+
+Composer is the dependency manager used by PHP projects. Laravel uses Composer to install packages and create Laravel applications.
+
+After installing Composer, the installation was verified using:
 
 ```bash
 composer -V
 ```
 
-Laravel:
+### Composer Installation Verification
+
+![Composer Version Verification](screenshots/composer-version.png)
+
+**What the screenshot shows:**
+
+The screenshot shows the Composer version displayed in Git Bash. This confirms that Composer is installed correctly and available through the command line.
+
+Composer is important for Laravel because it manages Laravel's PHP dependencies and allows developers to create Laravel projects.
+
+---
+
+# 5. Install Laravel
+
+Laravel was installed as the web application framework used for this project.
+
+The Laravel installation was verified using:
 
 ```bash
 laravel -V
 ```
 
-Git:
+Another way to verify the Laravel installer is:
+
+```bash
+composer global show laravel/installer
+```
+
+### Laravel Installation Verification
+
+![Laravel Version Verification](screenshots/laravel-version.png)
+
+**What the screenshot shows:**
+
+The screenshot shows the Laravel installer version displayed in Git Bash. This confirms that the Laravel development tools are installed and available for creating Laravel applications.
+
+---
+
+# 6. Install Git
+
+Git is a version control system used to track changes to project files.
+
+After installing Git, the installation was verified using:
 
 ```bash
 git --version
 ```
 
-MySQL:
+### Git Installation Verification
+
+![Git Version Verification](screenshots/git-version.png)
+
+**What the screenshot shows:**
+
+The screenshot shows the Git version displayed in Git Bash. This confirms that Git is installed and can be used for version control.
+
+Git was later used to commit the Laravel project and push it to GitHub.
+
+---
+
+# 7. Install MySQL
+
+MySQL was installed as the database management system for the development environment.
+
+The MySQL installation was verified using:
 
 ```bash
 mysql --version
 ```
 
-## 5. Installation and Setup
+### MySQL Installation Verification
 
-### PHP
+![MySQL Version Verification](screenshots/mysql--version.png)
 
-PHP was installed and verified using the following command:
+**What the screenshot shows:**
 
-```bash
-php -v
-```
+The screenshot shows the MySQL version information displayed in Git Bash. This confirms that MySQL is installed and accessible through the command line.
 
-The command displayed the installed PHP version, confirming that PHP was properly installed and accessible through the command line.
+MySQL can be used as the database server for Laravel applications.
 
-### Composer
+---
 
-Composer was installed to manage PHP dependencies and Laravel packages.
+# 8. Install Visual Studio Code
 
-The installation was verified using:
+Visual Studio Code was used as the code editor for developing the Laravel application.
 
-```bash
-composer -V
-```
+After installing Visual Studio Code, the Laravel project was opened in the editor.
 
-### Laravel
+### Laravel Project in Visual Studio Code
 
-Laravel was installed and verified using:
+![Visual Studio Code Laravel Project](screenshots/vscode.png)
 
-```bash
-laravel -V
-```
+**What the screenshot shows:**
 
-This confirmed that the Laravel installer was available.
+The screenshot shows the `hello-laravel` project opened in Visual Studio Code. The Laravel project files and folders can be viewed in the editor, allowing the application code to be created and modified.
 
-### Git
+Visual Studio Code was used throughout the development process to edit and manage the Laravel project.
 
-Git was installed for version control.
+---
 
-The installation was verified using:
+# 9. Create Laravel Project
 
-```bash
-git --version
-```
+After preparing the development environment, a new Laravel project was created.
 
-### MySQL
-
-MySQL was installed as the database management system for Laravel development.
-
-The installation was verified using:
-
-```bash
-mysql --version
-```
-
-### Visual Studio Code
-
-Visual Studio Code was used as the main code editor for the Laravel project.
-
-The Laravel project was opened in Visual Studio Code so that the application files could be edited and managed.
-
-### Creating the Laravel Project
-
-The Laravel project was created using:
+The project was created using Composer with the following command:
 
 ```bash
 composer create-project laravel/laravel hello-laravel
 ```
 
-The project was created inside the following folder:
+The project name is:
 
 ```text
 hello-laravel
 ```
 
-### Running the Laravel Application
+Another method of creating a Laravel project is:
 
-The Laravel development server was started using:
+```bash
+laravel new hello-laravel
+```
+
+### Created Laravel Project
+
+![Laravel Project in Visual Studio Code](screenshots/vscode.png)
+
+**What the screenshot shows:**
+
+The screenshot shows the newly created `hello-laravel` Laravel project opened in Visual Studio Code. The project contains the standard Laravel directories and files needed for application development.
+
+---
+
+# 10. Run Laravel
+
+After creating the project, the Laravel development server was started.
+
+The following command was used:
 
 ```bash
 php artisan serve
 ```
 
-The application was then opened in a web browser using:
+Laravel then provided a local development address:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-The Laravel application successfully loaded in the browser.
+This address was opened in a web browser to view the application.
 
-## 6. Project Structure
+### Laravel Development Server
 
-The main Laravel project contains the following important directories and files:
+![Laravel Artisan Serve](screenshots/artisan-serve.png)
+
+**What the screenshot shows:**
+
+The screenshot shows the `php artisan serve` command running successfully in Git Bash. It indicates that the Laravel development server has started and provides the local address used to access the application.
+
+### Laravel Application in Browser
+
+![Laravel Application](screenshots/hello-laravel-homepage.png)
+
+**What the screenshot shows:**
+
+The screenshot shows the Laravel application successfully running in the web browser through the local development server.
+
+---
+
+# 11. Modify the Homepage
+
+The default Laravel homepage was customized for this activity.
+
+The homepage was modified to display the following required information:
+
+* **Student Name**
+* **Student Number**
+* **Course**
+* **Section**
+* **Subject**
+* **Current Date**
+
+A welcome message for the Client-Server Technologies activity was also included.
+
+### Customized Laravel Homepage
+
+![Customized Laravel Homepage](screenshots/hello-laravel-homepage.png)
+
+**What the screenshot shows:**
+
+The screenshot shows the customized Laravel homepage running in the browser. It provides visual evidence that the default homepage was modified to display the required student information and project details.
+
+---
+
+# 12. Push Project to GitHub
+
+After completing the Laravel application, Git was used to upload the project to GitHub.
+
+The required repository name is:
+
+```text
+client-server-week02-laravel-setup
+```
+
+The project was committed and pushed using Git.
+
+### GitHub Repository
+
+![GitHub Repository](screenshots/github-repository.png)
+
+**What the screenshot shows:**
+
+The screenshot shows the GitHub repository containing the Laravel project. It provides evidence that the completed project was successfully uploaded to GitHub.
+
+### Git Commands Used
+
+The project files were added using:
+
+```bash
+git add .
+```
+
+The changes were committed using:
+
+```bash
+git commit -m "Complete Week 2 Laravel setup documentation"
+```
+
+The project was uploaded to GitHub using:
+
+```bash
+git push origin main
+```
+
+---
+
+# 13. Project Structure
+
+The main Laravel project contains the following structure:
 
 ```text
 hello-laravel/
@@ -177,8 +310,8 @@ hello-laravel/
 ├── routes/
 ├── storage/
 ├── tests/
-├── vendor/
 ├── .env
+├── .env.example
 ├── .gitignore
 ├── artisan
 ├── composer.json
@@ -186,130 +319,44 @@ hello-laravel/
 └── README.md
 ```
 
-### app
+The project also contains a `screenshots` folder used to document the installation, development, and GitHub submission process.
 
-The `app` directory contains the main application code, including controllers, models, and other classes.
+---
 
-### routes
+# 14. Conclusion
 
-The `routes` directory contains the application's route definitions.
+This activity provided practical experience in setting up a Laravel development environment and creating a basic Laravel application.
 
-### resources
+I learned how to install and verify PHP, Composer, Laravel, Git, MySQL, and Visual Studio Code. I also learned how to create a Laravel project using Composer and how to run the application locally using the Laravel Artisan development server.
 
-The `resources` directory contains views and other frontend resources.
+Modifying the homepage provided experience working with a Laravel application and displaying customized information in the browser.
 
-### public
+The activity also demonstrated the importance of Git and GitHub for version control and project sharing. The completed Laravel project was committed and pushed to the required GitHub repository.
 
-The `public` directory contains files that are publicly accessible by the application.
+Overall, this activity helped me understand the basic tools and workflow required for Laravel and client-server web application development.
 
-### config
+---
 
-The `config` directory contains Laravel configuration files.
+# Student Information
 
-### database
+**Student Name:** [YOUR NAME]
 
-The `database` directory contains database migrations, seeders, and factories.
-
-### storage
-
-The `storage` directory contains generated files, logs, and cached files.
-
-## 7. Problems Encountered
-
-During the Laravel setup, several problems were encountered.
-
-### Problem 1: PHP Configuration
-
-One problem encountered during the setup was related to the PHP configuration. Laravel and Composer require PHP to be correctly installed and accessible from the command line.
-
-### Solution
-
-The PHP installation was checked using:
-
-```bash
-php -v
-```
-
-The PHP configuration was then corrected so that the PHP command could be used from the terminal.
-
-### Problem 2: Database Driver Error
-
-A database connection problem occurred when running Laravel database commands. The error indicated that the required database driver could not be found.
-
-### Solution
-
-The PHP MySQL extension was enabled in the PHP configuration. After enabling the required extension, the Laravel application was able to communicate with MySQL.
-
-### Problem 3: Laravel Database Configuration
-
-Another problem involved the Laravel database configuration. The application initially attempted to use a database configuration that was not available.
-
-### Solution
-
-The Laravel `.env` configuration was checked and updated so that the application could use the correct database connection.
-
-## 8. Screenshots
-
-The project documentation includes screenshots showing the following:
-
-1. PHP version verification.
-2. Composer version verification.
-3. Laravel version verification.
-4. Git version verification.
-5. MySQL version verification.
-6. Visual Studio Code with the Laravel project.
-7. Laravel project running with `php artisan serve`.
-8. Laravel homepage displayed in the browser.
-9. Laravel project files and folders.
-10. Git/GitHub repository.
-
-The screenshots provide evidence that the required development environment was successfully configured.
-
-## 9. Reflection
-
-This activity helped me understand how to set up a complete Laravel development environment.
-
-I learned how PHP, Composer, Laravel, Git, MySQL, and Visual Studio Code work together when developing a web application.
-
-I also learned how to verify software installations using command-line commands such as `php -v`, `composer -V`, `laravel -V`, `git --version`, and `mysql --version`.
-
-Creating and running the Laravel application helped me understand the basic workflow of Laravel development. The `php artisan serve` command allowed me to run the application locally and view it through a web browser.
-
-The database configuration problems also helped me understand that Laravel depends on the correct PHP extensions and database settings when communicating with MySQL.
-
-Git was also an important part of the activity because it allows developers to track changes and manage their source code. Uploading the project to GitHub also provides a way to store and share the project.
-
-Overall, this activity gave me practical experience in setting up Laravel, troubleshooting configuration problems, running a web application, and managing the project using Git.
-
-## 10. References
-
-Laravel Documentation:
-https://laravel.com/docs
-
-PHP Documentation:
-https://www.php.net/docs.php
-
-Composer Documentation:
-https://getcomposer.org/doc/
-
-Git Documentation:
-https://git-scm.com/doc/
-
-Visual Studio Code Documentation:
-https://code.visualstudio.com/docs
-
-## 11. Student Information
-
-**Student Name:** [REPLACE WITH YOUR NAME]
-
-**Student Number:** [REPLACE WITH YOUR STUDENT NUMBER]
+**Student Number:** [YOUR STUDENT NUMBER]
 
 **Course:** ITST 302 – Client-Server Technologies
 
-**Section:** [REPLACE WITH YOUR SECTION]
+**Section:** [YOUR SECTION]
+
+**Subject:** Client-Server Technologies
 
 **Activity:** Week 2 – Laravel Development Environment
 
-## License
+---
 
-This project was created for educational purposes as part of the ITST 302 – Client-Server Technologies Week 2 laboratory activity.
+# References
+
+* Laravel Documentation — https://laravel.com/docs
+* PHP Documentation — https://www.php.net/docs.php
+* Composer Documentation — https://getcomposer.org/doc/
+* Git Documentation — https://git-scm.com/doc/
+* Visual Studio Code Documentation — https://code.visualstudio.com/docs
